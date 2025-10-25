@@ -5,7 +5,7 @@ import { trackEvent } from "@/lib/analytics";
 
 export default function HeroSection() {
   return (
-    <section className="relative py-20 md:py-32 overflow-hidden">
+    <section className="relative py-32 md:py-48 overflow-hidden min-h-[85vh] flex items-center">
       <div 
         className="absolute inset-0 z-0"
         style={{
@@ -14,22 +14,22 @@ export default function HeroSection() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-primary/10 to-background/80" />
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
-        <h1 className="text-4xl md:text-6xl font-display font-bold tracking-tight text-white mb-6">
-          Talk. Bond. Bloom.
+      <div className="relative z-10 max-w-4xl mx-auto px-8 lg:px-12 text-center w-full">
+        <h1 className="text-5xl md:text-7xl font-display font-bold tracking-tight leading-tight text-foreground mb-8">
+          Talk & Feel Better
         </h1>
-        <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8 leading-relaxed">
-          Find a SuperHost and share what's on your mind—privately, anytime.
+        <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto mb-12 leading-relaxed">
+          A simple, safe space where you can connect with genuine people, share your thoughts, and feel heard.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             asChild 
             size="lg"
-            className="rounded-full bg-primary/90 backdrop-blur-md hover:bg-primary/80 border border-primary-border"
+            className="rounded-full px-10 py-6 text-lg"
             data-testid="button-download-hero"
           >
             <a 
@@ -40,16 +40,8 @@ export default function HeroSection() {
               onClick={() => trackEvent('download_app', 'engagement', 'hero_primary')}
             >
               <Smartphone className="w-5 h-5" />
-              Download for Android
+              Download App
             </a>
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="rounded-full bg-white/10 backdrop-blur-md text-white border-white/30 hover:bg-white/20"
-            data-testid="button-ios-hero"
-          >
-            Coming Soon on iOS
           </Button>
         </div>
       </div>

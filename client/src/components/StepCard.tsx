@@ -8,17 +8,17 @@ interface StepCardProps {
 
 export default function StepCard({ number, title, description }: StepCardProps) {
   return (
-    <Card className="p-12 relative overflow-hidden hover-elevate transition-all" data-testid={`card-step-${number}`}>
-      <div className="absolute top-4 right-4 text-6xl font-bold opacity-10">
+    <div className="relative" data-testid={`card-step-${number}`}>
+      <div className="absolute -top-6 -left-2 text-8xl font-bold text-primary/5">
         {number}
       </div>
-      <div className="relative">
-        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-          <span className="text-xl font-bold text-primary">{number}</span>
+      <div className="relative pt-4">
+        <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+          <span className="text-2xl font-bold text-primary">{number}</span>
         </div>
-        <h3 className="text-xl font-semibold mb-3">{title}</h3>
-        <p className="text-base text-muted-foreground leading-relaxed">{description}</p>
+        <h3 className="text-2xl font-display font-semibold mb-4">{title}</h3>
+        <p className="text-lg text-muted-foreground leading-relaxed">{description}</p>
       </div>
-    </Card>
+    </div>
   );
 }

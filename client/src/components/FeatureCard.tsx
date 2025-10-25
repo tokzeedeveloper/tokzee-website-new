@@ -9,10 +9,12 @@ interface FeatureCardProps {
 
 export default function FeatureCard({ icon: Icon, title, description }: FeatureCardProps) {
   return (
-    <Card className="p-8 hover-elevate transition-all" data-testid={`card-feature-${title.toLowerCase().replace(/\s+/g, '-')}`}>
-      <Icon className="w-12 h-12 text-primary mb-4" />
-      <h3 className="text-xl font-semibold mb-3">{title}</h3>
-      <p className="text-base text-muted-foreground leading-relaxed">{description}</p>
-    </Card>
+    <div className="text-center" data-testid={`card-feature-${title.toLowerCase().replace(/\s+/g, '-')}`}>
+      <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-primary/10 mb-6">
+        <Icon className="w-10 h-10 text-primary" />
+      </div>
+      <h3 className="text-2xl font-display font-semibold mb-4">{title}</h3>
+      <p className="text-lg text-muted-foreground leading-relaxed">{description}</p>
+    </div>
   );
 }
