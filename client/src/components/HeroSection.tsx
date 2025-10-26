@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Smartphone, Sparkles, Heart, Star } from "lucide-react";
+import { Smartphone, Sparkles, Star } from "lucide-react";
 import heroImage from "@assets/generated_images/Indian_video_calling_app_hero_121ba65f.png";
 import { trackEvent } from "@/lib/analytics";
 
@@ -31,10 +31,10 @@ export default function HeroSection() {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-display font-bold tracking-tight leading-tight text-foreground mb-8">
-          Talk & Feel Better
+          Real Voices. Real Comfort. Anytime.
         </h1>
         <p className="text-xl md:text-2xl text-foreground/90 max-w-2xl mx-auto mb-12 leading-relaxed">
-          Connect with verified SuperHosts for private audio & video calls. Share your thoughts in a safe, anonymous space.
+          Connect with verified SuperHosts for private audio & video calls — a safe space to share, laugh, and feel lighter.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -45,24 +45,13 @@ export default function HeroSection() {
             data-testid="button-download-hero"
           >
             <a 
-              href="https://play.google.com/store/apps/details?id=live.videocall.chat" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="#download" 
               className="flex items-center gap-2"
               onClick={() => trackEvent('download_app', 'engagement', 'hero_primary')}
             >
               <Smartphone className="w-5 h-5" />
               Download App
             </a>
-          </Button>
-          <Button 
-            variant="outline"
-            size="lg"
-            className="rounded-full px-10 py-6 text-lg border-2 border-primary/30 hover:bg-primary/10"
-            data-testid="button-learn-more"
-          >
-            <Heart className="w-5 h-5 mr-2" />
-            Learn More
           </Button>
         </div>
         
