@@ -170,7 +170,7 @@ export default function Guidelines() {
                 <h2 className="text-2xl font-semibold mb-4 mt-12">Updates to Community Guidelines</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
                   We may update these Guidelines periodically to reflect policy changes or evolving community needs. 
-                  Material updates will be notified via in-app messages or SMS.
+                  Material updates will be notified via in-app messages or SMS at the same time we expect you to check these guidelines periodically.
                 </p>
               </section>
 
