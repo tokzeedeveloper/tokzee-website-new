@@ -199,9 +199,7 @@ export default function Home() {
                   data-testid="button-download-cta"
                 >
                   <a 
-                    href="https://play.google.com/store/apps/details?id=live.videocall.chat" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                    href="#download"
                     onClick={() => trackEvent('download_app', 'engagement', 'cta_primary')}
                     className="flex items-center gap-2"
                   >
