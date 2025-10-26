@@ -1,105 +1,95 @@
-import type { Config } from "tailwindcss"
-import plugin from "tailwindcss/plugin"
-import { defineConfig } from "tailwindcss"
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-export default defineConfig({
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        // === Token colors from your index.css ===
-        border: "hsl(var(--border))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+/* LIGHT MODE TOKENS */
+:root {
+  --button-outline: rgba(0,0,0, .10);
+  --badge-outline: rgba(0,0,0, .05);
+  --opaque-button-border-intensity: -8;
 
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-          border: "hsl(var(--card-border))",
-        },
+  --elevate-1: rgba(0,0,0, .03);
+  --elevate-2: rgba(0,0,0, .08);
 
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
+  --background: 270 40% 98%;
+  --foreground: 260 20% 20%;
+  --border: 270 20% 90%;
+  --card: 270 40% 99%;
+  --card-foreground: 260 20% 20%;
+  --card-border: 270 20% 92%;
+  --sidebar: 270 35% 96%;
+  --sidebar-foreground: 260 20% 20%;
+  --sidebar-border: 270 20% 90%;
+  --sidebar-primary: 270 75% 60%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 270 25% 88%;
+  --sidebar-accent-foreground: 260 20% 25%;
+  --sidebar-ring: 270 75% 60%;
+  --popover: 270 35% 95%;
+  --popover-foreground: 260 20% 20%;
+  --popover-border: 270 20% 88%;
+  --primary: 270 75% 60%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 270 25% 90%;
+  --secondary-foreground: 260 20% 25%;
+  --muted: 270 20% 92%;
+  --muted-foreground: 260 15% 45%;
+  --accent: 160 60% 55%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 10% 98%;
+  --input: 210 12% 70%;
+  --ring: 280 65% 55%;
 
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-          border: "hsl(var(--popover-border))",
-        },
+  --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, Monaco, "Courier New", monospace;
+  --font-display: Poppins, Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  --radius: .75rem;
+}
 
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-          border: "hsl(var(--primary-border))",
-        },
+/* DARK MODE TOKENS */
+.dark {
+  --button-outline: rgba(255,255,255, .10);
+  --badge-outline: rgba(255,255,255, .05);
+  --opaque-button-border-intensity: 9;
 
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-          border: "hsl(var(--secondary-border))",
-        },
+  --elevate-1: rgba(255,255,255, .04);
+  --elevate-2: rgba(255,255,255, .09);
 
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-          border: "hsl(var(--muted-border))",
-        },
+  --background: 260 30% 10%;
+  --foreground: 270 20% 90%;
+  --border: 260 20% 22%;
+  --card: 260 25% 15%;
+  --card-foreground: 270 20% 90%;
+  --card-border: 260 20% 20%;
+  --sidebar: 260 25% 14%;
+  --sidebar-foreground: 270 20% 90%;
+  --sidebar-border: 260 20% 20%;
+  --sidebar-primary: 270 70% 65%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 260 20% 22%;
+  --sidebar-accent-foreground: 270 20% 85%;
+  --sidebar-ring: 270 70% 65%;
+  --popover: 260 25% 18%;
+  --popover-foreground: 270 20% 90%;
+  --popover-border: 260 20% 25%;
+  --primary: 270 70% 65%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 260 20% 25%;
+  --secondary-foreground: 270 20% 85%;
+  --muted: 260 15% 20%;
+  --muted-foreground: 260 15% 65%;
+  --accent: 160 55% 50%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 68% 58%;
+  --destructive-foreground: 0 8% 98%;
+}
 
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-          border: "hsl(var(--accent-border))",
-        },
+/* Base styles using your tokens */
+@layer base {
+  * { @apply border-border; }
+  body { @apply font-sans antialiased bg-background text-foreground; }
+}
 
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-          border: "hsl(var(--destructive-border))",
-        },
-
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-
-        // Optional: charts if you plan to use them as utilities
-        "chart-1": "hsl(var(--chart-1))",
-        "chart-2": "hsl(var(--chart-2))",
-        "chart-3": "hsl(var(--chart-3))",
-        "chart-4": "hsl(var(--chart-4))",
-        "chart-5": "hsl(var(--chart-5))",
-      },
-      borderRadius: {
-        DEFAULT: "var(--radius)",
-      },
-      fontFamily: {
-        sans: "var(--font-sans)",
-        serif: "var(--font-serif)",
-        mono: "var(--font-mono)",
-        display: "var(--font-display)",
-      },
-      boxShadow: {
-        "2xs": "var(--shadow-2xs)",
-        xs: "var(--shadow-xs)",
-        sm: "var(--shadow-sm)",
-        DEFAULT: "var(--shadow)",
-        md: "var(--shadow-md)",
-        lg: "var(--shadow-lg)",
-        xl: "var(--shadow-xl)",
-        "2xl": "var(--shadow-2xl)",
-      },
-    },
-  },
-  plugins: [
-    require("tailwindcss-animate"),
-  ],
-})
+/* Your utility layer can follow here as needed */
