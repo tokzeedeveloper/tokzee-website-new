@@ -26,7 +26,7 @@ export default function Terms() {
               <p className="text-base text-muted-foreground">
                 These Terms of Use (“Terms”) govern your access to and use of
                 the Tokzee App (website at <span className="underline">www.tokzee.live</span> and our mobile
-                applications) operated by Brewing Conversations Private Limited
+                applications) operated by VoicePe Technologies Private Limited
                 (“Company”, “we”, “our”, “us”). “You” or “your” refers to any
                 user of the Tokzee App. These Terms incorporate by reference the
                 specific Terms of Use applicable to Superhosts (available via
@@ -57,9 +57,9 @@ export default function Terms() {
                   Service.
                 </p>
                 <p className="text-muted-foreground">
-                  The Tokzee App is operated by Brewing Conversations Private
-                  Limited, registered in India, office at 48-B, Ambamata
-                  Scheme, Udaipur, Rajasthan, India. Ensure you are permitted to
+                  The Tokzee App is operated by VoicePe Technologies Private
+                  Limited, registered in India, office at 79 Panchwati, Nr Kids Kingdom School, 
+                  Udaipur, Rajasthan, India. Ensure you are permitted to
                   use the Tokzee App under the laws of your jurisdiction.
                 </p>
               </section>
@@ -379,7 +379,7 @@ export default function Terms() {
                     support@tokzee.live
                   </a>
                   <br />
-                  Address: 48-B, Ambamata Scheme, Udaipur, Rajasthan, India
+                  Address: 79 Panchwati, Nr Kids Kingdom School, Udaipur, Rajasthan, India
                 </address>
 
                 <h3 className="text-xl font-semibold mt-6 mb-2">
