@@ -22,7 +22,7 @@ export default function Privacy() {
               </p>
               <h1 className="text-4xl font-display font-bold mb-2">Privacy Policy</h1>
               <p className="text-base text-muted-foreground">
-                Welcome to Tokzee App’s Privacy Policy. This document explains how Brewing Conversations Private Limited
+                Welcome to Tokzee App’s Privacy Policy. This document explains how VoicePe Technologies Private Limited
                 (“Tokzee App”, “we”, “us”, or “our”) collects, uses, stores, and shares your personal information while
                 you use the Tokzee App, and how you can manage your data and privacy choices while using the app.
               </p>
@@ -328,11 +328,11 @@ export default function Privacy() {
                 <h3 className="text-xl font-semibold mt-6 mb-2">Grievance Officer (designation only)</h3>
                 <address className="not-italic text-muted-foreground">
                   Email:{" "}
-                  <a href="mailto:grievance.officer@tokzee.live" className="underline">
-                    grievance.officer@tokzee.live
+                  <a href="mailto:support@tokzee.live" className="underline">
+                    support@tokzee.live
                   </a>
                   <br />
-                  Address: 48-B, Ambamata Scheme, Udaipur, Rajasthan, India
+                  Address: 79 Panchwati, Nr Kids Kingdom School, Udaipur, Rajasthan, India
                 </address>
               </section>
             </div>
