@@ -152,7 +152,7 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
                 <TestimonialCard 
-                  quote="Joining Tokzee was the best decision during tough times"
+                  quote="Joining Better Friend was the best decision during tough times"
                   author="Simran"
                   age={25}
                 />

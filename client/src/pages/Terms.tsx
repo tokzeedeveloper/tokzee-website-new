@@ -69,14 +69,14 @@ export default function Terms() {
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">6. Limitation of Liability</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  Tokzee App is provided "as is" without warranties of any kind. We are not responsible for the content of conversations between users and SuperHosts. Our service is not a substitute for professional mental health services.
+                  Better Friend is provided "as is" without warranties of any kind. We are not responsible for the content of conversations between users and companions. Our service is not a substitute for professional mental health services.
                 </p>
               </section>
 
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">7. Termination</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  We reserve the right to suspend or terminate your access to Tokzee App at any time, without notice, for conduct that we believe violates these terms or is harmful to other users.
+                  We reserve the right to suspend or terminate your access to Better Friend at any time, without notice, for conduct that we believe violates these terms or is harmful to other users.
                 </p>
               </section>
 
