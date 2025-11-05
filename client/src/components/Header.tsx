@@ -12,7 +12,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-8 lg:px-12">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" data-testid="link-home">
-            <span className="text-2xl font-display font-bold text-primary">Tokzee</span>
+            <span className="text-2xl font-display font-bold text-primary">Better Friend</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-6">
@@ -35,9 +35,7 @@ export default function Header() {
               data-testid="button-download-header"
             >
               <a 
-                href="https://play.google.com/store/apps/details?id=live.videocall.chat" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="#download"
                 onClick={() => trackEvent('download_app', 'engagement', 'header')}
               >
                 Download App
@@ -75,9 +73,7 @@ export default function Header() {
               data-testid="button-download-mobile"
             >
               <a 
-                href="https://play.google.com/store/apps/details?id=live.videocall.chat" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="#download"
                 onClick={() => trackEvent('download_app', 'engagement', 'mobile_menu')}
               >
                 Download App

@@ -6,9 +6,9 @@ export default function Terms() {
   return (
     <>
       <SEOHead 
-        title="Terms & Conditions - Tokzee App"
-        description="Read Tokzee App's terms and conditions for using our anonymous audio and video calling platform. Learn about user responsibilities and service guidelines."
-        canonical="https://www.tokzee.live/terms"
+        title="Terms & Conditions - Better Friend"
+        description="Read Better Friend's terms and conditions for using our anonymous audio and video calling platform. Learn about user responsibilities and service guidelines."
+        canonical="https://www.betterfriend.live/terms"
       />
       <div className="min-h-screen flex flex-col">
         <Header />
@@ -24,14 +24,14 @@ export default function Terms() {
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">1. Acceptance of Terms</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  By accessing and using Tokzee App, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to these terms, please do not use our service.
+                  By accessing and using Better Friend, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to these terms, please do not use our service.
                 </p>
               </section>
 
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">2. Use of Service</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  Tokzee App provides a platform for connecting users with verified SuperHosts for anonymous audio and video conversations. You must be at least 18 years old to use this service.
+                  Better Friend provides a platform for connecting users with verified companions for anonymous audio and video conversations. You must be at least 18 years old to use this service.
                 </p>
                 <h3 className="text-xl font-semibold mb-3 mt-8">User Responsibilities</h3>
                 <ul className="space-y-2 mb-4">
@@ -50,9 +50,9 @@ export default function Terms() {
               </section>
 
               <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 mt-12">4. SuperHost Guidelines</h2>
+                <h2 className="text-2xl font-semibold mb-4 mt-12">4. Companion Guidelines</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  All SuperHosts undergo verification and training. They are expected to provide empathetic, non-judgmental support. SuperHosts are not licensed therapists or medical professionals.
+                  All companions undergo verification and training. They are expected to provide empathetic, non-judgmental support. Companions are not licensed therapists or medical professionals.
                 </p>
               </section>
 

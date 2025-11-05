@@ -6,9 +6,9 @@ export default function Privacy() {
   return (
     <>
       <SEOHead 
-        title="Privacy Policy - Tokzee App"
-        description="Learn how Tokzee App protects your privacy. Read our comprehensive privacy policy covering data collection, encryption, and your rights."
-        canonical="https://www.tokzee.live/privacy"
+        title="Privacy Policy - Better Friend"
+        description="Learn how Better Friend protects your privacy. Read our comprehensive privacy policy covering data collection, encryption, and your rights."
+        canonical="https://www.betterfriend.live/privacy"
       />
       <div className="min-h-screen flex flex-col">
         <Header />
@@ -24,7 +24,7 @@ export default function Privacy() {
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">1. Introduction</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  At Tokzee App, we are committed to protecting your privacy and ensuring your anonymity. This Privacy Policy explains how we collect, use, and safeguard your information when you use our service.
+                  At Better Friend, we are committed to protecting your privacy and ensuring your anonymity. This Privacy Policy explains how we collect, use, and safeguard your information when you use our service.
                 </p>
               </section>
 

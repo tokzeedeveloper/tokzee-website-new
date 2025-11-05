@@ -1,4 +1,4 @@
-# Tokzee App - Design Guidelines
+# Better Friend - Design Guidelines
 
 ## Design Approach
 **Reference-Based Approach**: Inspired by dostt.in's warm minimalism - clean layouts with soft pastel aesthetics, generous breathing room, and visual storytelling. The design emphasizes calmness, safety, and authentic human connection through large impactful typography, decorative subtle motifs, and image-forward sections.
@@ -68,7 +68,7 @@
 - CTA buttons: mt-12, primary + secondary, both rounded-full, backdrop-blur-md with semi-transparent backgrounds
 - Decorative element: Subtle geometric pattern overlay (dots/circles) in corner
 
-### Why Choose Tokzee Section
+### Why Choose Better Friend Section
 - **Layout**: py-32, max-w-6xl
 - Large section header: text-4xl md:text-5xl, mb-20, centered
 - 3-column grid on desktop (grid-cols-1 md:grid-cols-3), gap-12

@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-8 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div className="space-y-4">
-            <h3 className="text-2xl font-display font-bold text-primary">Tokzee</h3>
+            <h3 className="text-2xl font-display font-bold text-primary">Better Friend</h3>
             <p className="text-base text-muted-foreground leading-relaxed">
-              Talk & feel better
+              Your companion for meaningful conversations
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t text-center">
           <p className="text-base text-muted-foreground">
-            © {new Date().getFullYear()} Tokzee App. All rights reserved.
+            © {new Date().getFullYear()} Better Friend. All rights reserved.
           </p>
         </div>
       </div>

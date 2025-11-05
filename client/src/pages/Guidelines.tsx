@@ -6,9 +6,9 @@ export default function Guidelines() {
   return (
     <>
       <SEOHead 
-        title="Community Guidelines - Tokzee App"
-        description="Read Tokzee App's community guidelines for respectful, safe interactions. Learn about our standards for meaningful conversations and user conduct."
-        canonical="https://www.tokzee.live/guidelines"
+        title="Community Guidelines - Better Friend"
+        description="Read Better Friend's community guidelines for respectful, safe interactions. Learn about our standards for meaningful conversations and user conduct."
+        canonical="https://www.betterfriend.live/guidelines"
       />
       <div className="min-h-screen flex flex-col">
         <Header />
@@ -24,7 +24,7 @@ export default function Guidelines() {
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">Our Mission</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  Tokzee App exists to create a safe, supportive space for meaningful human connections. These guidelines help ensure every conversation is respectful, empathetic, and positive.
+                  Better Friend exists to create a safe, supportive space for meaningful human connections. These guidelines help ensure every conversation is respectful, empathetic, and positive.
                 </p>
               </section>
 
