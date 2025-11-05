@@ -5,7 +5,7 @@ export default function StepCardExample() {
     <StepCard 
       number={1}
       title="Browse profiles or connect randomly"
-      description="Explore SuperHost profiles to find someone who resonates with you, or let serendipity guide you with random matching."
+      description="Explore companion profiles to find someone who resonates with you, or let serendipity guide you with random matching."
     />
   );
 }

@@ -6,7 +6,7 @@ export default function DifferentiatorCardExample() {
     <DifferentiatorCard 
       icon={Zap}
       title="Instant Connection"
-      description="Connect with SuperHosts in seconds, not days. No endless swiping or waiting."
+      description="Connect with companions in seconds, not days. No endless swiping or waiting."
     />
   );
 }

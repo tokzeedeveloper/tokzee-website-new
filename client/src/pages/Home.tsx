@@ -52,8 +52,8 @@ export default function Home() {
                 />
                 <FeatureCard 
                   icon={Heart}
-                  title="Verified and empathetic SuperHosts"
-                  description="Every SuperHost is carefully verified and trained to provide genuine support and meaningful conversations."
+                  title="Verified and empathetic companions"
+                  description="Every companion is carefully verified and trained to provide genuine support and meaningful conversations."
                 />
                 <FeatureCard 
                   icon={Users}
@@ -79,7 +79,7 @@ export default function Home() {
                 <StepCard 
                   number={1}
                   title="Browse profiles or connect randomly"
-                  description="Explore SuperHost profiles to find someone who resonates with you, or let serendipity guide you with random matching."
+                  description="Explore companion profiles to find someone who resonates with you, or let serendipity guide you with random matching."
                 />
                 <StepCard 
                   number={2}
@@ -118,8 +118,8 @@ export default function Home() {
                 />
                 <TrustBadge 
                   icon={CheckCircle}
-                  title="Verified SuperHosts"
-                  description="Background checks and training for all SuperHosts"
+                  title="Verified Companions"
+                  description="Background checks and training for all companions"
                 />
                 <TrustBadge 
                   icon={EyeOff}

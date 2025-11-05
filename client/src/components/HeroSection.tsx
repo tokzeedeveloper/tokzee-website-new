@@ -34,7 +34,7 @@ export default function HeroSection() {
           Real Voices. Real Comfort. Anytime.
         </h1>
         <p className="text-xl md:text-2xl text-foreground/90 max-w-2xl mx-auto mb-12 leading-relaxed">
-          Connect with verified SuperHosts for private audio & video calls — a safe space to share, laugh, and feel lighter.
+          Connect with verified companions for private audio & video calls — a safe space to share, laugh, and feel lighter.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
