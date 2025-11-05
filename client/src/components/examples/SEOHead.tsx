@@ -3,9 +3,9 @@ import SEOHead from '../SEOHead';
 export default function SEOHeadExample() {
   return (
     <SEOHead 
-      title="Tokzee App - Talk. Bond. Bloom."
-      description="Connect with verified SuperHosts for meaningful conversations"
-      canonical="https://www.tokzee.live"
+      title="Better Friend - Your Companion for Meaningful Conversations"
+      description="Connect with verified companions for meaningful conversations"
+      canonical="https://www.betterfriend.live"
     />
   );
 }
