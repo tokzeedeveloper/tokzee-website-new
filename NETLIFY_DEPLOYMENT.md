@@ -91,12 +91,17 @@ The following environment variable is used in this project:
 
 - **`netlify.toml`**: Main configuration file
   - Defines build settings
+  - **Forces HTTPS redirects** (fixes SSL errors on first load)
   - Sets up redirects for client-side routing
   - Configures security headers
   - Sets cache headers for assets
 
 - **`client/public/_redirects`**: Fallback redirect configuration
   - Ensures all routes redirect to index.html for client-side routing
+
+- **`client/public/_headers`**: Security headers file
+  - Strict-Transport-Security (HSTS) for HTTPS enforcement
+  - Additional security headers
 
 - **`.env.example`**: Example environment variables file
   - Copy to `.env` for local development
