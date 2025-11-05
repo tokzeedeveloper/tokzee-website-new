@@ -8,7 +8,7 @@ export default function Guidelines() {
       <SEOHead 
         title="Community Guidelines - Tokzee App"
         description="Tokzee App’s Community Guidelines ensure a safe, respectful, and inclusive environment for all users. Learn what’s allowed and what’s not on our platform."
-        canonical="https://www.tokzee.live/guidelines"
+        canonical="https://www.betterfriend.live/guidelines"
       />
       <div className="min-h-screen flex flex-col">
         <Header />
