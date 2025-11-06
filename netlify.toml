@@ -5,20 +5,7 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Force HTTPS redirect (must be first)
-[[redirects]]
-  from = "http://betterfriend.live/*"
-  to = "https://betterfriend.live/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://www.betterfriend.live/*"
-  to = "https://www.betterfriend.live/:splat"
-  status = 301
-  force = true
-
-# SPA fallback (must be last)
+# SPA fallback for client-side routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
