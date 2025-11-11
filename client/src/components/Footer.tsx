@@ -46,6 +46,15 @@ export default function Footer() {
               Udaipur, Rajasthan<br />
               India
             </address>
+            <div className="mt-4">
+              <a 
+                href="mailto:support@betterfriend.live" 
+                className="text-base text-muted-foreground hover:text-primary transition-colors"
+                data-testid="link-email-support"
+              >
+                support@betterfriend.live
+              </a>
+            </div>
           </div>
         </div>
 
