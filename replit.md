@@ -2,9 +2,9 @@
 
 ## Overview
 
-Better Friend is an anonymous audio and video calling platform that connects users with verified companions for meaningful conversations. The application provides a safe, encrypted environment for private conversations with features including verified profiles, end-to-end encryption, and 24/7 availability across 50+ countries.
+Better Friend is an anonymous audio and video calling platform that connects users with verified companions for meaningful conversations. This is a **static marketing website** featuring the home page, privacy policy, terms of service, and community guidelines.
 
-The platform is built as a full-stack web application with a React frontend and Express backend, featuring a marketing website with pages for home, privacy policy, terms of service, and community guidelines.
+The site is built as a pure frontend application with React and deployed to Netlify as a static site.
 
 ## User Preferences
 
@@ -27,8 +27,7 @@ Preferred communication style: Simple, everyday language.
 - Custom color system with HSL values for light/dark mode support
 
 **State Management:**
-- TanStack Query (React Query) for server state management
-- Local component state with React hooks
+- Local component state with React hooks only (no server state)
 
 **Key Features:**
 - Component-based architecture with reusable UI elements (cards, badges, sections)
@@ -36,57 +35,56 @@ Preferred communication style: Simple, everyday language.
 - SEO optimization with meta tags and structured data
 - Responsive design with mobile-first approach
 
-### Backend Architecture
+### Build & Deployment
 
-**Server Framework:**
-- Express.js with TypeScript
-- ESM module system
-- HTTP server creation for potential WebSocket upgrades
+**Build System:**
+- Vite for static site generation
+- Build output: `dist/public/` directory
+- Optimized assets with code splitting and tree shaking
 
-**Development Setup:**
-- Vite middleware integration for HMR in development
-- Custom logging middleware for API request tracking
-- Static file serving for production builds
+**Deployment:**
+- Netlify static hosting
+- Custom domain: betterfriend.live
+- Automatic deployments from Git
+- Security headers configured (_headers file)
+- SPA fallback routing (_redirects file)
 
-**Data Layer:**
-- Drizzle ORM configured for PostgreSQL
-- Neon serverless database adapter
-- In-memory storage implementation (MemStorage) as fallback/development mode
-- Session management with connect-pg-simple
-
-**API Design:**
-- RESTful API structure (prefix: `/api`)
-- JSON request/response format
-- Centralized error handling
+**Development:**
+- Local dev server: `./dev.sh` or `npx vite --host 0.0.0.0 --port 5000`
+- Hot module replacement (HMR)
+- TypeScript type checking
 
 ### External Dependencies
 
-**Database:**
-- PostgreSQL via Neon serverless (@neondatabase/serverless)
-- Drizzle ORM for type-safe database queries
-- Database schema includes users table with UUID primary keys
-
 **Third-Party Services:**
 - Google Analytics (GA4) for user behavior tracking and analytics
+  - Requires `VITE_GA_MEASUREMENT_ID` environment variable
+  - Automatically initialized on app load
 - Google Fonts (Poppins and Inter) for typography
 
 **Key Libraries:**
 - Radix UI primitives for accessible, unstyled components
-- React Hook Form with Zod for form validation
-- date-fns for date manipulation
 - class-variance-authority and clsx for dynamic className composition
-- Embla Carousel for image carousels
+- Lucide React for icons
 
 **Development Tools:**
 - Replit-specific plugins for development environment
 - TypeScript for static type checking
 - PostCSS with Tailwind for CSS processing
 
-**Authentication & Security:**
-- Session-based authentication infrastructure (storage configured)
-- Password hashing (schema includes password field)
-- CORS and security headers (to be implemented)
+**Security:**
+- Security headers via Netlify (_headers file)
+- HSTS, X-Frame-Options, CSP configured
+- No authentication (static marketing site)
 
 **Asset Management:**
 - Static assets stored in `attached_assets/generated_images`
 - Vite alias configuration for easy asset imports
+
+---
+
+## Additional Documentation
+
+For detailed setup, deployment, and development instructions, see:
+- **STATIC_SITE_SETUP.md** - Comprehensive guide to development, building, and Netlify deployment
+- **NETLIFY_SSL_FINAL_FIX.md** - Troubleshooting guide for SSL/DNS configuration
