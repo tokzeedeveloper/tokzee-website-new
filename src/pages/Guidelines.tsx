@@ -83,9 +83,9 @@ export default function Guidelines() {
               </section>
 
               <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 mt-12">SuperHost Standards</h2>
+                <h2 className="text-2xl font-semibold mb-4 mt-12">Companion Standards</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  SuperHosts are held to additional standards:
+                  Companions are held to additional standards:
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="text-base leading-relaxed text-muted-foreground">Maintain professionalism and empathy</li>
@@ -119,7 +119,7 @@ export default function Guidelines() {
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">Mental Health Resources</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  Tokzee App is not a substitute for professional mental health services. If you or someone you know is experiencing a mental health crisis:
+                  Better Friend is not a substitute for professional mental health services. If you or someone you know is experiencing a mental health crisis:
                 </p>
                 <ul className="space-y-2 mb-4">
                   <li className="text-base leading-relaxed text-muted-foreground">Contact local emergency services immediately</li>

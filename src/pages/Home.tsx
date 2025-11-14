@@ -147,29 +147,29 @@ export default function Home() {
                   💬 Real Stories
                 </div>
                 <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-                  Listen to tales of others
+                  Listen to tales of your Dostts
                 </h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
                 <TestimonialCard 
-                  quote="Talking to someone who truly understands made all the difference."
-                  author="Rohan"
-                  age={27}
+                  quote="Joining Better Friend was the best decision during tough times"
+                  author="Simran"
+                  age={25}
                 />
                 <TestimonialCard 
-                  quote="I finally felt heard without being judged or interrupted."
-                  author="Megha"
+                  quote="I found someone who listened to me without judgement"
+                  author="Amit"
                   age={28}
                 />
                 <TestimonialCard 
-                  quote="Better Friend helped me open up about things I’d never shared before."
-                  author="Ananya"
-                  age={26}
+                  quote="It's easier to share when my identity is not revealed"
+                  author="Smruthika"
+                  age={22}
                 />
                 <TestimonialCard 
-                  quote="It’s comforting to know I’m not alone — this community is special."
-                  author="Aditya"
-                  age={31}
+                  quote="I found everyone to be really warm and thoughtful"
+                  author="Joyful"
+                  age={26}
                 />
               </div>
             </div>
