@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-console.log('Starting Better Friend static website...');
+console.log('Starting Tokzee static website...');
 
 async function startServer() {
   try {

@@ -1,220 +1,216 @@
-# Better Friend - Design Guidelines
+# Tokzee - Design Guidelines
 
 ## Design Approach
-**Reference-Based Approach**: Inspired by dostt.in's warm minimalism - clean layouts with soft pastel aesthetics, generous breathing room, and visual storytelling. The design emphasizes calmness, safety, and authentic human connection through large impactful typography, decorative subtle motifs, and image-forward sections.
+**Reference-Based Approach**: Inspired by Linear's precision + Stripe's professional clarity, creating a modern platform that balances expert credibility with approachable design. Clean layouts with vibrant purple accents, generous whitespace, and trust-building visual elements. Emphasis on verification, professionalism, and seamless expert connections.
 
 **Core Principles**:
-- Generous whitespace: Let content breathe with ample spacing
-- Typography as hero: Large, bold type for emotional impact
-- Soft & approachable: Pastel color palette creating warmth
-- Image-driven storytelling: Visual narratives over text-heavy explanations
-- Decorative subtlety: Gentle geometric patterns and motifs as accents
+- Professional clarity: Clean, confident layouts that build trust
+- Purple as power color: Strategic use of vibrant purple for key actions and brand moments
+- Expert-focused storytelling: Highlight credentials, verification, and expertise
+- Breathing room: Generous spacing creates premium feel
+- Typography hierarchy: Bold statements with clear information architecture
 
 ---
 
 ## Typography
 
 **Font Stack**: 
-- **Display**: Poppins (Google Fonts) - Headlines, hero sections, large quotes
+- **Display**: Inter (Google Fonts) - All headlines, hero sections, emphasis
 - **Body**: Inter (Google Fonts) - All UI, body text, supporting content
 
 **Hierarchy**:
-- **Hero Headline**: Poppins, 5xl-7xl, font-bold, tracking-tight, leading-tight
-- **Section Headers**: Poppins, 4xl-5xl, font-bold, leading-tight
-- **Large Quote Text**: Poppins, 3xl-4xl, font-semibold, leading-snug (testimonials)
-- **Subsection Headers**: Poppins, 2xl-3xl, font-semibold
-- **Body Text**: Inter, lg-xl, font-normal, leading-relaxed
-- **Small Text**: Inter, base, font-medium
-- **Button Text**: Inter, base-lg, font-semibold
+- **Hero Headline**: text-6xl md:text-7xl, font-bold, tracking-tight, leading-none
+- **Section Headers**: text-4xl md:text-5xl, font-bold, leading-tight
+- **Subsection Headers**: text-2xl md:text-3xl, font-semibold
+- **Expert Names/Credentials**: text-xl md:text-2xl, font-semibold
+- **Body Text**: text-lg, font-normal, leading-relaxed
+- **Small Text/Labels**: text-sm md:text-base, font-medium
+- **Button Text**: text-base md:text-lg, font-semibold
 
 ---
 
 ## Layout System
 
-**Spacing Primitives**: Tailwind units of **4, 8, 12, 16, 20, 24, 32, 40, 48** for generous rhythm
-- Micro-spacing: 4, 8 (tight relationships)
-- Component spacing: 12, 16, 20 (within components)
-- Section padding: 24, 32, 40, 48 (vertical section separation - use generously)
+**Spacing Primitives**: Tailwind units of **4, 6, 8, 12, 16, 20, 24, 32**
+- Micro-spacing: 4, 6 (tight relationships)
+- Component spacing: 8, 12, 16 (within components)
+- Section padding: 20, 24, 32 (vertical section separation)
 
 **Container Strategy**:
-- Full-width sections with inner `max-w-7xl mx-auto px-8 lg:px-12`
+- Full-width sections with inner `max-w-7xl mx-auto px-6 lg:px-12`
 - Content sections: `max-w-6xl`
-- Text-focused areas: `max-w-3xl`
-- Extra breathing room on all sides
+- Text-focused areas: `max-w-4xl`
 
 **Vertical Rhythm**: 
-- Desktop: py-32 to py-48 for major sections
-- Mobile: py-20 to py-24 for sections
-- Never force viewport heights - let content flow naturally
+- Desktop: py-24 to py-32 for major sections
+- Mobile: py-16 to py-20 for sections
 
 ---
 
 ## Component Library
 
 ### Navigation
-- **Desktop**: Horizontal bar with backdrop blur, sticky on scroll, py-6
-- Logo left, minimal centered links (3-4 max), CTA right
-- Links: text-base font-medium, generous px-6 spacing
-- **Mobile**: Slide-out drawer, large touch targets (h-14)
-- Primary CTA: rounded-full, px-8 py-3
+- **Desktop**: Horizontal bar, backdrop-blur-lg, sticky, py-4, border-b
+- Logo left, centered links (Platform, Experts, Pricing, About), CTA right
+- Links: text-base font-medium, px-6
+- **Mobile**: Slide-out drawer, h-16 touch targets
+- Primary CTA: rounded-full, px-6 py-3, purple background
 
 ### Hero Section
-- **Layout**: Full-width, py-32 md:py-48, minimum 85vh height
-- Large background image: Authentic people in warm video call moments, soft lighting, diverse representation
-- Image treatment: Subtle warm overlay (pastel-toned gradient), slight blur for text contrast
-- Content: Centered, max-w-4xl
-- Headline: Ultra-large (text-5xl md:text-7xl), bold, short impactful phrase (3-5 words)
-- Subheadline: text-xl md:text-2xl, max-w-2xl, mt-8
-- CTA buttons: mt-12, primary + secondary, both rounded-full, backdrop-blur-md with semi-transparent backgrounds
-- Decorative element: Subtle geometric pattern overlay (dots/circles) in corner
+- **Layout**: Full-width, py-32 md:py-48, min-h-[85vh]
+- Large background image with dark gradient overlay
+- Content: Centered, max-w-5xl
+- Headline: text-6xl md:text-7xl, font-bold, "Connect with Verified Experts" style messaging
+- Subheadline: text-xl md:text-2xl, max-w-3xl, mt-6, emphasizing instant expertise access
+- CTA buttons: mt-12, primary (purple) + secondary (white outline), both rounded-full, backdrop-blur-md
+- Trust indicators below CTAs: "500+ Verified Experts" "Available 24/7" badges, flex gap-8, mt-8
 
-### Why Choose Better Friend Section
-- **Layout**: py-32, max-w-6xl
-- Large section header: text-4xl md:text-5xl, mb-20, centered
-- 3-column grid on desktop (grid-cols-1 md:grid-cols-3), gap-12
-- Feature cards: Minimal design, no borders, p-0
-- Icon top: w-16 h-16, pastel-toned container (rounded-2xl, p-4)
-- Title: text-2xl font-semibold, mt-6, mb-4
-- Description: text-lg leading-relaxed
-- Cards maintain breathing room with generous mb-12 on mobile
-
-### Visual Storytelling Section
-- **Layout**: Full-width alternating 2-column sections (image + text)
-- First section: Image left, text right
-- Second section: Text left, image right
-- Images: Large (w-full h-96 md:h-[600px]), rounded-3xl, object-cover
-- Text container: max-w-xl, pl-12 md:pl-20 (when right), pr-12 md:pr-20 (when left)
-- Each section: py-24, shows one key feature/benefit with headline (text-3xl md:text-4xl), body text (text-lg), small supporting elements
-- Images show: Real users in calls, safety features in action, connection moments
+### Expert Categories Section
+- **Layout**: py-24, max-w-7xl
+- Section header: text-4xl md:text-5xl, mb-16, "Expert Categories" or "Find Your Expert"
+- 4-column grid (grid-cols-2 md:grid-cols-4), gap-6
+- Category cards: rounded-2xl, p-8, border, hover:shadow-lg transition
+- Icon top: w-12 h-12, purple-tinted
+- Category name: text-xl font-semibold, mt-4
+- Expert count: text-sm, mt-2, muted
+- 8-12 categories total (Business, Tech, Health, Legal, Finance, Career, etc.)
 
 ### How It Works
-- **Layout**: py-32, max-w-5xl centered
-- Section header: text-4xl md:text-5xl, mb-24, centered
-- 3-step horizontal timeline on desktop, vertical on mobile
-- Each step: Large decorative number (text-8xl font-bold, ultra-light opacity as background), step title (text-2xl font-semibold), description (text-lg), supporting icon
-- Steps connected by decorative dotted lines (desktop only)
-- Clean, minimal styling with generous spacing (gap-16)
+- **Layout**: py-24, max-w-6xl
+- Header: text-4xl md:text-5xl, mb-20, centered
+- 3-step process: grid-cols-1 md:grid-cols-3, gap-12
+- Each step: Large number badge (w-16 h-16, rounded-full, purple background), title (text-2xl font-semibold, mt-6), description (text-lg, mt-4)
+- Steps: "Choose Expert" → "Book Session" → "Connect Instantly"
+- Phone mockup images showing interface for each step
 
-### Statistics Section
-- **Layout**: Full-width with subtle pastel background treatment, py-32
-- 4-column grid (grid-cols-2 md:grid-cols-4), gap-12
-- Each stat: Large number (text-5xl md:text-6xl font-bold), small label below (text-base uppercase tracking-wider)
-- Centered alignment, minimal decoration
-- Decorative subtle pattern background (geometric shapes, very low opacity)
+### Verification & Trust Section
+- **Layout**: Full-width with light background, py-24
+- Split layout: Image left (showing verification process), content right
+- Image: w-full md:w-1/2, h-96 md:h-[500px], rounded-3xl
+- Content: max-w-xl, md:pl-16
+- Header: text-4xl md:text-5xl, mb-8
+- Trust points: 4 items with checkmark icons
+- Each point: Icon (w-8 h-8, purple), text (text-lg, font-medium)
+- Points: ID Verification, Background Checks, Review System, Secure Platform
+
+### Featured Experts Section
+- **Layout**: py-24, max-w-7xl
+- Header: text-4xl md:text-5xl, mb-16
+- 3-column grid (grid-cols-1 md:grid-cols-3), gap-8
+- Expert cards: rounded-2xl, p-6, border, hover:shadow-xl transition
+- Avatar: w-24 h-24, rounded-full, border-4 purple
+- Name: text-xl font-semibold, mt-4
+- Expertise: text-base, purple-tinted
+- Verification badge: Small verified icon
+- Rating: Stars + review count (text-sm)
+- Availability: "Available Now" status badge
+- Quick book button: rounded-full, w-full, mt-4
+
+### Pricing Section
+- **Layout**: py-24, max-w-6xl
+- Header: text-4xl md:text-5xl, mb-16, centered
+- 3-tier cards: grid-cols-1 md:grid-cols-3, gap-8
+- Cards: rounded-2xl, p-8, border, featured tier has purple border-2 + shadow-xl
+- Tier name: text-2xl font-bold
+- Price: text-5xl font-bold, mt-4
+- Per session/subscription details: text-base, mt-2
+- Features list: mt-8, each with checkmark, text-base, mb-3
+- CTA button: rounded-full, w-full, mt-8
+
+### Statistics Banner
+- **Layout**: Full-width purple background, py-16
+- 4-column grid (grid-cols-2 md:grid-cols-4), gap-8, max-w-7xl centered
+- Each stat: Large number (text-4xl md:text-5xl, font-bold, white), label (text-base, mt-2, white/80)
+- Stats: Total Experts, Sessions Completed, User Rating, Countries
 
 ### Testimonials
-- **Layout**: py-32, max-w-6xl
-- Section header: text-4xl md:text-5xl, mb-20, centered
-- 2-column grid (grid-cols-1 md:grid-cols-2), gap-16
-- Card design: Minimal, no borders, p-12, rounded-2xl with subtle pastel background
-- Large quote text first: text-3xl md:text-4xl font-semibold Poppins, leading-snug, decorative opening quote mark (text-7xl, ultra-light opacity)
-- Attribution below: text-lg, mt-8, name + age/location in lighter weight
-- 4-6 testimonials total
-
-### Language Support
-- **Layout**: py-32, max-w-6xl
-- Grid of language cards: grid-cols-2 md:grid-cols-3 lg:grid-cols-4, gap-8
-- Each card: rounded-2xl, p-8, text-center, minimal border or subtle pastel background
-- Language name: text-xl font-semibold
-- Speaker count below: text-base
-- Badge/indicator for availability: small pill shape
-- "Request Language" CTA below grid: rounded-full button
-
-### Trust & Safety Section
-- **Layout**: py-32, max-w-6xl
-- Large centered header: text-4xl md:text-5xl, mb-20
-- 2x2 grid (grid-cols-1 md:grid-cols-2), gap-12
-- Each trust point: Icon (w-14 h-14, shield/lock themed), title (text-2xl font-semibold), description (text-lg)
-- Clean layout with generous padding within each section
-- Decorative trust badge/seal element in background
+- **Layout**: py-24, max-w-6xl
+- Header: text-4xl md:text-5xl, mb-16, centered
+- 2-column grid (grid-cols-1 md:grid-cols-2), gap-8
+- Cards: rounded-2xl, p-8, border
+- Quote: text-xl, leading-relaxed, mb-6
+- User info: Avatar (w-12 h-12, rounded-full), name + title beside (text-base font-semibold, muted text-sm)
+- 4-6 testimonials showcasing expert interactions
 
 ### Final CTA Section
-- **Layout**: Full-width, py-40, centered content
-- Large headline: text-4xl md:text-5xl, max-w-3xl centered
-- Supporting text: text-xl, mt-6, max-w-2xl centered
-- Download buttons: mt-12, flex gap-4, include platform icons
-- Decorative geometric pattern background (subtle, pastel-toned)
+- **Layout**: Full-width purple background, py-32, centered
+- Headline: text-5xl md:text-6xl, font-bold, white, max-w-4xl centered
+- Subtext: text-xl, white/90, mt-6, max-w-2xl centered
+- Buttons: mt-12, flex gap-4, white background + white outline variants
+- App store badges below: mt-8
 
 ### Footer
-- **Layout**: py-20, 4-column grid on desktop (stack mobile)
-- Sections: Brand (logo + tagline), Product Links, Company, Legal
-- Company address: "48-B Ambamata Scheme, Udaipur, Rajasthan" in company column
-- Social icons: w-6 h-6, horizontal row
-- Newsletter signup: Simple input + button, rounded-full styling
-- Copyright: text-sm, centered, mt-12, border-t separator above
-- Generous spacing throughout (gap-12)
+- **Layout**: py-16, 4-column grid desktop (stack mobile), border-t
+- Sections: Product (Platform, Experts, Pricing), Company (About, Careers, Press), Legal (Privacy, Terms, Guidelines), Contact
+- Company address: "48-B Ambamata Scheme, Udaipur, Rajasthan, India" in Contact column
+- Social icons: w-6 h-6, purple-tinted
+- Copyright: text-sm, centered, mt-12
 
 ### Buttons
-- **Primary**: rounded-full, px-10 py-4, text-lg font-semibold
-- **Secondary**: rounded-full, px-10 py-4, border-2, text-lg font-semibold
-- **On Images** (Hero/Image backgrounds): backdrop-blur-md with semi-transparent background, no hover/active states defined
-- **Standard Buttons**: transition-all duration-200, with standard hover/active states
-- **Download Buttons**: rounded-2xl, px-8 py-4, flex items-center gap-3, platform icon included
-
-### Cards
-- Border-radius: rounded-2xl (16px) standard, rounded-3xl (24px) for larger containers
-- Minimal borders or borderless with subtle pastel background fills
-- Shadows: Avoid heavy shadows, use subtle elevation (shadow-sm) sparingly
-- Emphasis on clean, flat design with pastel color differentiation
+- **Primary**: rounded-full, px-8 py-4, purple background, white text, text-lg font-semibold
+- **Secondary**: rounded-full, px-8 py-4, border-2, text-lg font-semibold
+- **On Images/Purple backgrounds**: backdrop-blur-md, semi-transparent background, no hover/active states defined
+- **Standard Buttons**: transition-all duration-200 with standard hover/active states
 
 ---
 
 ## Images
 
-### Hero Section
-- **Image**: Large background (1920x1200 minimum), authentic video call moment - warm lighting, diverse people, genuine smiles, comfortable home setting
-- Treatment: Soft warm overlay gradient (top darker for text, bottom lighter), subtle blur for depth
-- Position: object-cover, background
+**Large Hero Image**: Required
+- Image: Professional video call in progress - expert on screen (business attire, professional setting), client side visible, clean interface UI visible
+- Dimensions: 1920x1200 minimum
+- Treatment: Dark gradient overlay (top to bottom), enabling white text contrast
+- Style: Modern, professional, diverse representation, bright natural lighting
 
-### Visual Storytelling Sections (2-3 sections)
-- **Images**: Large feature images (800x600 minimum) showing:
-  1. Safety features in action (verification badges, reporting UI)
-  2. Meaningful conversation moments (two people engaged in call)
-  3. Language/cultural diversity (global connection representation)
-- Treatment: rounded-3xl, minimal effects, natural authentic photography
-- All images: Warm color palette, soft lighting, real people (not stock)
+**Verification Section Image**:
+- Image: Dashboard showing verification badges, ID check interface, professional credentials
+- Dimensions: 800x600
+- Treatment: rounded-3xl, subtle shadow
+- Position: Left side of split layout
 
-### How It Works
-- Optional supporting imagery: Phone mockups showing interface, simple illustrations of process steps
-- If used: Small supporting images (w-32 h-32), rounded-xl
+**How It Works Images**:
+- 3 phone mockups showing: Expert selection screen, booking interface, active video call
+- Dimensions: 400x800 each
+- Treatment: rounded-2xl, modern device frames
+- Position: Above or beside each step description
 
-### Testimonials
-- User avatars: Circular, w-16 h-16, can use initials if no photos
-- Positioned next to attribution
+**Expert Profile Images**:
+- High-quality professional headshots for featured experts section
+- Dimensions: 300x300, square
+- Treatment: rounded-full, professional photography
 
-### General
-- All images: lazy loading, descriptive alt text
-- Consistent rounded corners (rounded-2xl or rounded-3xl)
-- Focus on authentic, warm, diverse representation
+**All Images**: Consistent modern aesthetic, professional quality, diverse representation, natural lighting
 
 ---
 
-## Decorative Elements
+## Static Pages
 
-- **Geometric Motifs**: Subtle circles, dots, curved lines as background patterns (very low opacity)
-- **Placement**: Corner accents in hero, background patterns in stats/CTA sections
-- **Style**: Soft pastel tones matching overall palette, never overpowering
-- **Quotation Marks**: Large decorative opening quotes in testimonials (text-7xl, ultra-light opacity)
+### Privacy Policy, Terms, Community Guidelines
+- **Layout**: py-24, max-w-4xl, single column
+- Page header: text-4xl md:text-5xl, font-bold, mb-12
+- Last updated: text-sm, muted, mb-8
+- Content sections: text-lg, leading-relaxed
+- Section headers: text-2xl font-semibold, mt-12, mb-6
+- Lists: ml-6, mb-4, marker:text-purple
+- Links: purple, underline
+- Sticky sidebar navigation (desktop): Table of contents, text-base, purple active states
 
 ---
 
 ## Animations
 
-- **On Scroll**: Gentle fade-in with slight translateY for sections
-- **Hover**: Subtle scale (scale-102) for cards, no aggressive transforms
-- **Links**: Soft underline animation
-- **Statistics**: Count-up animation on numbers when visible
-- **Minimal**: No carousels, no auto-play, no distracting motion
-- **Hero**: Very subtle parallax on background (optional, barely perceptible)
+- **On Scroll**: Subtle fade-in for sections
+- **Hover**: Cards scale-102, shadow expansion
+- **Buttons**: Smooth background transitions
+- **Statistics**: Count-up animation when visible
+- **Minimal**: No auto-play, no distracting motion
 
 ---
 
 ## Accessibility
 
-- Semantic HTML5 throughout
-- Single H1 per page, logical heading hierarchy
-- ARIA labels on all interactive elements
-- Focus visible states (ring-2 with pastel accent)
-- Minimum touch target 44x44px
-- Skip navigation link
-- Color contrast WCAG AA compliant despite pastel palette
+- Semantic HTML5, logical heading hierarchy (single H1)
+- ARIA labels on interactive elements
+- Focus visible: ring-2 ring-purple
+- Minimum touch targets: 44x44px
+- WCAG AA contrast compliance

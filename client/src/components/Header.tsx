@@ -12,7 +12,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-8 lg:px-12">
         <div className="flex h-20 items-center justify-between">
           <Link href="/" data-testid="link-home">
-            <span className="text-2xl font-display font-bold text-primary">Better Friend</span>
+            <span className="text-2xl font-display font-bold text-primary">Tokzee</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-6">

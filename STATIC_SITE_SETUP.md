@@ -1,4 +1,4 @@
-# Better Friend - Static Website Setup
+# Tokzee - Static Website Setup
 
 ## ✅ Current Structure
 

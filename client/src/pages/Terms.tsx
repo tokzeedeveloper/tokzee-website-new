@@ -6,9 +6,9 @@ export default function Terms() {
   return (
     <>
       <SEOHead 
-        title="Terms & Conditions - Better Friend"
-        description="Read Better Friend's terms and conditions for using our anonymous audio and video calling platform. Learn about user responsibilities and service guidelines."
-        canonical="https://www.betterfriend.live/terms"
+        title="Terms & Conditions - Tokzee"
+        description="Read Tokzee's terms and conditions for using our anonymous audio and video calling platform. Learn about user responsibilities and service guidelines."
+        canonical="https://www.tokzee.live/terms"
       />
       <div className="min-h-screen flex flex-col">
         <Header />
@@ -24,14 +24,14 @@ export default function Terms() {
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">1. Acceptance of Terms</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  By accessing and using Better Friend, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to these terms, please do not use our service.
+                  By accessing and using Tokzee, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to these terms, please do not use our service.
                 </p>
               </section>
 
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">2. Use of Service</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  Better Friend provides a platform for connecting users with verified companions for anonymous audio and video conversations. You must be at least 18 years old to use this service.
+                  Tokzee provides a platform for connecting users with verified experts for anonymous audio and video conversations. You must be at least 18 years old to use this service.
                 </p>
                 <h3 className="text-xl font-semibold mb-3 mt-8">User Responsibilities</h3>
                 <ul className="space-y-2 mb-4">
@@ -50,9 +50,9 @@ export default function Terms() {
               </section>
 
               <section className="mb-12">
-                <h2 className="text-2xl font-semibold mb-4 mt-12">4. Companion Guidelines</h2>
+                <h2 className="text-2xl font-semibold mb-4 mt-12">4. Expert Guidelines</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  All companions undergo verification and training. They are expected to provide empathetic, non-judgmental support. Companions are not licensed therapists or medical professionals.
+                  All experts undergo verification and training. They are expected to provide empathetic, non-judgmental support. Experts are not licensed therapists or medical professionals.
                 </p>
               </section>
 
@@ -69,14 +69,14 @@ export default function Terms() {
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">6. Limitation of Liability</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  Better Friend is provided "as is" without warranties of any kind. We are not responsible for the content of conversations between users and companions. Our service is not a substitute for professional mental health services.
+                  Tokzee is provided "as is" without warranties of any kind. We are not responsible for the content of conversations between users and experts. Our service is not a substitute for professional mental health services.
                 </p>
               </section>
 
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">7. Termination</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  We reserve the right to suspend or terminate your access to Better Friend at any time, without notice, for conduct that we believe violates these terms or is harmful to other users.
+                  We reserve the right to suspend or terminate your access to Tokzee at any time, without notice, for conduct that we believe violates these terms or is harmful to other users.
                 </p>
               </section>
 

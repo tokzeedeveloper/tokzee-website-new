@@ -17,9 +17,9 @@ export default function Home() {
   return (
     <>
       <SEOHead 
-        title="Better Friend - Your Companion for Meaningful Conversations | Anonymous Audio & Video Calling"
-        description="Connect with verified companions for meaningful, anonymous conversations. Audio and video calls in a safe, encrypted environment. Available 24/7 in 50+ countries."
-        canonical="https://www.betterfriend.live"
+        title="Tokzee - Your Expert for Meaningful Conversations | Anonymous Audio & Video Calling"
+        description="Connect with verified experts for meaningful, anonymous conversations. Audio and video calls in a safe, encrypted environment. Available 24/7 in 50+ countries."
+        canonical="https://www.tokzee.live"
       />
       <div className="min-h-screen flex flex-col">
         <Header />
@@ -27,7 +27,7 @@ export default function Home() {
         <main className="flex-1">
           <HeroSection />
 
-          <section className="py-32 md:py-40 relative" data-testid="section-why-betterfriend">
+          <section className="py-32 md:py-40 relative" data-testid="section-why-tokzee">
             {/* Decorative elements */}
             <div className="absolute top-10 right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
             <div className="absolute bottom-20 left-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl" />
@@ -35,13 +35,13 @@ export default function Home() {
             <div className="max-w-6xl mx-auto px-8 lg:px-12 relative">
               <div className="text-center mb-20">
                 <div className="inline-block px-6 py-2 bg-primary/10 rounded-full text-primary font-semibold mb-6">
-                  ✨ Why Choose Better Friend
+                  ✨ Why Choose Tokzee
                 </div>
                 <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                   Private audio & video calls
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                  Every profile on Better Friend is 100% verified, so you are always talking to real people
+                  Every profile on Tokzee is 100% verified, so you are always talking to real people
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
@@ -52,8 +52,8 @@ export default function Home() {
                 />
                 <FeatureCard 
                   icon={Heart}
-                  title="Verified and empathetic companions"
-                  description="Every companion is carefully verified and trained to provide genuine support and meaningful conversations."
+                  title="Verified and empathetic experts"
+                  description="Every expert is carefully verified and trained to provide genuine support and meaningful conversations."
                 />
                 <FeatureCard 
                   icon={Users}
@@ -79,7 +79,7 @@ export default function Home() {
                 <StepCard 
                   number={1}
                   title="Browse profiles or connect randomly"
-                  description="Explore companion profiles to find someone who resonates with you, or let serendipity guide you with random matching."
+                  description="Explore expert profiles to find someone who resonates with you, or let serendipity guide you with random matching."
                 />
                 <StepCard 
                   number={2}
@@ -105,7 +105,7 @@ export default function Home() {
                 <div className="inline-block px-6 py-2 bg-primary/20 rounded-full text-primary font-semibold mb-6">
                   🛡️ Your Safety First
                 </div>
-                <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">At Better Friend, your safety comes first</h2>
+                <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">At Tokzee, your safety comes first</h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                   Talk openly and safely, with no need to share your identity. Your privacy is always protected.
                 </p>
@@ -118,8 +118,8 @@ export default function Home() {
                 />
                 <TrustBadge 
                   icon={CheckCircle}
-                  title="Verified Companions"
-                  description="Background checks and training for all companions"
+                  title="Verified Experts"
+                  description="Background checks and training for all experts"
                 />
                 <TrustBadge 
                   icon={EyeOff}
@@ -152,7 +152,7 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
                 <TestimonialCard 
-                  quote="Joining Better Friend was the best decision during tough times"
+                  quote="Joining Tokzee was the best decision during tough times"
                   author="Simran"
                   age={25}
                 />

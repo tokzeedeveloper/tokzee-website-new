@@ -6,9 +6,9 @@ export default function Privacy() {
   return (
     <>
       <SEOHead 
-        title="Privacy Policy - Better Friend"
-        description="Learn how Better Friend protects your privacy. Read our comprehensive privacy policy covering data collection, encryption, and your rights."
-        canonical="https://www.betterfriend.live/privacy"
+        title="Privacy Policy - Tokzee"
+        description="Learn how Tokzee protects your privacy. Read our comprehensive privacy policy covering data collection, encryption, and your rights."
+        canonical="https://www.tokzee.live/privacy"
       />
       <div className="min-h-screen flex flex-col">
         <Header />
@@ -24,7 +24,7 @@ export default function Privacy() {
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">1. Introduction</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  At Better Friend, we are committed to protecting your privacy and ensuring your anonymity. This Privacy Policy explains how we collect, use, and safeguard your information when you use our service.
+                  At Tokzee, we are committed to protecting your privacy and ensuring your anonymity. This Privacy Policy explains how we collect, use, and safeguard your information when you use our service.
                 </p>
               </section>
 
@@ -53,10 +53,10 @@ export default function Privacy() {
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">3. End-to-End Encryption</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  All audio and video conversations on Better Friend are protected by end-to-end encryption. This means:
+                  All audio and video conversations on Tokzee are protected by end-to-end encryption. This means:
                 </p>
                 <ul className="space-y-2 mb-4">
-                  <li className="text-base leading-relaxed text-muted-foreground">Only you and your companion can access conversation content</li>
+                  <li className="text-base leading-relaxed text-muted-foreground">Only you and your expert can access conversation content</li>
                   <li className="text-base leading-relaxed text-muted-foreground">We cannot access, read, or listen to your conversations</li>
                   <li className="text-base leading-relaxed text-muted-foreground">Your conversations are not stored on our servers</li>
                   <li className="text-base leading-relaxed text-muted-foreground">Third parties cannot intercept your communications</li>
@@ -69,7 +69,7 @@ export default function Privacy() {
                   The minimal data we collect is used solely to:
                 </p>
                 <ul className="space-y-2 mb-4">
-                  <li className="text-base leading-relaxed text-muted-foreground">Match you with appropriate companions</li>
+                  <li className="text-base leading-relaxed text-muted-foreground">Match you with appropriate experts</li>
                   <li className="text-base leading-relaxed text-muted-foreground">Improve service quality and user experience</li>
                   <li className="text-base leading-relaxed text-muted-foreground">Ensure platform safety and detect abuse</li>
                   <li className="text-base leading-relaxed text-muted-foreground">Comply with legal obligations</li>
@@ -124,7 +124,7 @@ export default function Privacy() {
               <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4 mt-12">9. Children's Privacy</h2>
                 <p className="text-base leading-relaxed text-muted-foreground mb-4">
-                  Better Friend is intended for users aged 18 and above. We do not knowingly collect information from minors.
+                  Tokzee is intended for users aged 18 and above. We do not knowingly collect information from minors.
                 </p>
               </section>
 
