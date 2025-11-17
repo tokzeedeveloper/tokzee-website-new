@@ -136,44 +136,7 @@ export default function Home() {
           </section>
 
 
-          <section className="py-32 md:py-40 relative" data-testid="section-testimonials">
-            {/* Playful decorative elements */}
-            <div className="absolute top-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
-            
-            <div className="max-w-6xl mx-auto px-8 lg:px-12 relative">
-              <div className="text-center mb-20">
-                <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full text-primary font-semibold mb-6">
-                  💬 Real Stories
-                </div>
-                <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-                  Listen to tales of your Dostts
-                </h2>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
-                <TestimonialCard 
-                  quote="Joining Tokzee was the best decision during tough times"
-                  author="Simran"
-                  age={25}
-                />
-                <TestimonialCard 
-                  quote="I found someone who listened to me without judgement"
-                  author="Amit"
-                  age={28}
-                />
-                <TestimonialCard 
-                  quote="It's easier to share when my identity is not revealed"
-                  author="Smruthika"
-                  age={22}
-                />
-                <TestimonialCard 
-                  quote="I found everyone to be really warm and thoughtful"
-                  author="Joyful"
-                  age={26}
-                />
-              </div>
-            </div>
-          </section>
+          
 
           <section className="py-40 md:py-48 bg-gradient-to-br from-primary/10 via-accent/10 to-primary/5 relative overflow-hidden" data-testid="section-cta">
             {/* Animated background shapes */}

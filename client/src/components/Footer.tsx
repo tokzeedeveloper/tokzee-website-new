@@ -42,7 +42,7 @@ export default function Footer() {
           <div>
             <h4 className="text-base font-semibold mb-4">Contact</h4>
             <address className="text-base text-muted-foreground not-italic leading-relaxed" data-testid="text-address">
-              79 Panchwati, Behind Kids, Kingdom School<br />
+              79 Panchwati, Behind Kids Kingdom School<br />
               Udaipur City, Girwa<br />
               Udaipur, Rajasthan 313001<br />
               India
